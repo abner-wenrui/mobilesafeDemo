@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.abner.mobilesafe.activity.Setup3Activity">
+`    <TextView
+    style="@style/TitleStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="3.设置安全号码"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIM卡变更后:\n报警短信会发送给安全号码"
+        android:textColor="#000"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/et_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btn_select_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="选择联系人"
+        android:textSize="20sp"
+        android:background="@drawable/selector_number_btn_bg"/>
+    <!-- 让内部点的控件水平居中 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/presence_invisible"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/presence_invisible"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/presence_online"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/presence_invisible"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:background="@drawable/phone"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"/>
+        <!--图片选择器，在选中和未选中的过程中，切换展示图片-->
+        <Button
+            style="@style/nextBtn"
+            android:text="下一页"/>
+        <Button
+            android:text="上一页"
+            style="@style/preBtn"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

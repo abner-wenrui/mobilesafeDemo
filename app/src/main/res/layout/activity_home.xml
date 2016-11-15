@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.abner.mobilesafe.activity.HomeActivity">
+
+    <!--将对应的属性抽取到样式中 -->
+
+    <TextView
+        style="@style/TitleStyle"
+        android:text="功能列表"/>
+
+    <!--android:ellipsize="end" 添加省略点的所在位置-->
+
+
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusableInTouchMode="true"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:text="刘思齐傻逼,小刘傻逼,傻逼小刘，啦啦啦啦啦啦啦啦啦啦啦啦啦啦~~~~~~~~~~~~~~~~~~~"
+        android:textColor="#000"/>-->
+
+    <com.abner.mobilesafe.view.FocusTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:text="刘思齐傻逼,小刘傻逼,傻逼小刘，啦啦啦啦啦啦啦啦啦啦啦啦啦啦~~~~~~~~~~~~~~~~~~~"
+        android:textColor="#000"
+        />
+
+    <GridView
+        android:id="@+id/gv_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:verticalSpacing="10dp"
+        android:numColumns="3"></GridView>
+
+</LinearLayout>
